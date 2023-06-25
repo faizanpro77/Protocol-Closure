@@ -25,18 +25,10 @@ class SecondViewController: UIViewController {
         self.protocolDelegate?.sendProtocolStr("send data through protocol",[9,9,9])
         
         self.sendData?("send data direct without completion",[7,7,7])
-                
+        
         //recieve completion handler data inside function
-                viewControlle.sendDataToNextScreen { insideFunc,insideArr  in
+        viewControlle.sendDataToNextScreen { insideFunc,insideArr  in
             print(insideFunc,"======>",insideArr)
-        
-            }
-        
-        
-        
+        }
     }
-    
-
-  
-
 }
